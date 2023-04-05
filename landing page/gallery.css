@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    background-color: rgb(138, 86, 116);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    transition: 0.5s ease;
+    position: fixed;
+}
+
+header .brand{
+    color: white;
+    font-size: 1cm;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header .navigation{
+    position: relative;
+    
+}
+header .navigation .navigation-items a{
+    position: relative;
+    color: black;
+    font-size: 1cm;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 3px;
+    transition: 0.3s ease;
+    color: white;
+}
+header .navigation .navigation-items a:before
+{
+    content: '';
+    position: absolute;
+    background-color: rgb(246,248,244);
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    margin: -5px;
+    transition: 0.3s ease;
+
+}
+header .navigation .navigation-items a:hover:before
+{
+    width: 100%;
+}
+
+
+.gallery {
+    padding: 5px;
+    width: 325px;
+    margin: 12px;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 10px 20px;
+    /* width: 180px; */
+}
+
+.gallery.navigation{
+    position: relative;
+
+}
+
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    /* width: 100%; */
+    width: 290px;
+    height: 250px;
+    /* height: auto; */
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    width: 290px;
+}
+
+.desc:hover{
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(247, 228, 213);
+    overflow: auto;
+}
+
+p{
+    color: rgb(249, 236, 218);
+    font-size: 1cm;
+    font-weight: 200px;
+}
+
+.Travel{
+    color: white;
+    margin: 50px 30px;
+    font-size: 1cm;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.total{
+    background-image: url(./india\ gate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    color: white;
+    text-decoration: bold;
+    text-decoration: solid;
+}
+
+.para{
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+    color: white;
+}

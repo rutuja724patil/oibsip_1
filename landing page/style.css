@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: auto;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 90;
+    transition: 0.55 ease;
+}
+header .brand{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 91px;
+}
+header .navigation{
+    position: relative;
+    padding: 0 300px;
+}
+header .navigation .navigation-items a{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    word-spacing: 30px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 3px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:before{
+
+    margin: -5px;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    background: white;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+section{
+    padding: 100px 200px;
+}
+.home{
+    position: relative;
+    width:100;
+    min-height: 100vh;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./wallpaper.jpg");
+    background-size: cover;
+    background-blend-mode: saturation;
+}
+.content{
+    z-index: 888;
+    color: white;
+    width: 30%;
+    margin-top: 80px;
+}
+.content{
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: initial;
+    letter-spacing: 2px;
+    /* line-height: 75px; */
+    margin-bottom: 40px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: 200px;
+}
+button{
+    margin: 10px;
+    border-radius: 6px;
+    color: antiquewhite;
+    height: 50px;
+    width: 100px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+button:hover{
+    background:white;
+    color:black;
+}
+button a{
+    color: black;
+    align-content: center;
+    text-decoration: none;
+    font-size: 1cm;
+    transition: 0.3s ease;
+}
+button::after{
+    content:  '';
+    position: absolute;
+    background: white;
+}
+button a:hover{
+    height: 50px ;
+    width: 100px ;
+    color: black ;
+}
+footer{
+    color: white;
+    padding: 425px 0px;
+    text-align: center;
+    margin-left: 320px;
+    background: linear-gradient(black);
+}
+footer ul li a{
+    width: 100%;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    text-decoration: none;
+    justify-content: center;
+}
